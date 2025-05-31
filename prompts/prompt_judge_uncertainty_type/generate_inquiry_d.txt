@@ -1,0 +1,8 @@
+One user gives a query and some documents are retrieved to help answer the query. However, the retrieved documents is satisfying, making the query hard to answer. Your task is to generate an inquiry to gather further document information to answer the question. 
+
+Question: 
+{}
+Document: 
+{}
+
+Please output the generated inquiry only, no extra tokens should be added.

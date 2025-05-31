@@ -1,0 +1,17 @@
+
+Given a query, an LLM generate an further inquiry to gather more information about the query. Your task is to determine how to gather more information based on the query and the inquiry, here are some actions you can take to gather more information
+
+A: Interact with the retrieval system to retrieve more document information.
+B: Interact with the user to get further clarification about the original query.
+C: Conducting Chain of Thought to thinker more thoroughly to better understand the query. 
+
+If the answer to the inquiry is definite and objective or the inquiry directly seeks for more document information, then you should interact with the retrieval system to get more document information to solve the inquiry.
+If the answer to the inquiry is not definite and it is some subjective choices of the user, you should interact with the user to clarify the original query.
+If it seems that the inquiry simply rephrase the query, then no interaction is needed, the model needs to think deeper to understand the query, and Chain of Thought is needed.
+
+Here are the query and the inquiry:
+Query: {}
+Inquiry: {}
+
+Please generate your response in a single token "A" or "B" or "C".
+

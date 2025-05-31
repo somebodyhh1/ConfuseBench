@@ -1,0 +1,22 @@
+One user gives a query and some documents are retrieved to help answer the query. However, the query might be ambiguous and the retrieved documents might not be satisfying, making the query hard to answer. Your task is to identify why the query is hard to answer and generate an inquiry to gather further information to answer the question. 
+
+Here are some requirements for the inquiry
+1. You should ask for only one question in the inquiry.
+2. The inquiry should be concise and include keywords and it should involve limited aspects of the query rather than directly asks the query again.
+
+Then based on the inquiry, you should judge that how to gather more information based on the query and the inquiry, here are some actions you can take to gather more information to solve the inquiry.
+
+A: Interact with the retrieval system to retrieve more document information
+B: Interact with the user to get further clarification about the original query
+
+If the answer to the inquiry is definite and objective, then you should interact with the retrieval system to get more document information to solve the inquiry.
+If the answer to the inquiry is not definite and it is some subjective choices of the user, you should interact with the user to clarify the original query.
+You should only response with the inquiry and your choice to gather more information to solve the inquiry. Please response with Dict{{"Inquiry": "Str(generated inquiry)","Choice" : "A/B"}}
+
+But if the inquiry simply rephrase the query or the answer of the inquiry is already indicated in the query or documents you should response with Dict{{"Inquiry": "Str(generated inquiry)","Choice" : "C"}}
+
+Query: {}
+Documents: {}
+
+Please generate your answer in json.
+

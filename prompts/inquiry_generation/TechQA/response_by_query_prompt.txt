@@ -1,0 +1,28 @@
+You are an expert who can effectively solve technical questions in IBMDeveloper and DeveloperWorks forums. One user Gives a technical question or a description about the bug or strange phenomena and some documents are retrieved which might help. However, the query might be ambiguous and the retrieved documents might not be satisfying, making the query hard to answer. Your task is to identify why the query is hard to answer and generate an inquiry to gather further information to answer the question.
+
+Here are some requirements for the inquiry
+1. You should ask for only one question in the inquiry.
+2. Simply describe your question, do not add some words like "Could you", especially you are asksing for document/API information, because the user can not provide this information, instead a retrieval system could. So you should organize your inquiry as "I need more information about xxx", "What does xxx means/refers to", and avoid using words like "Could you".
+3. The inquiry should be concise and include keywords and it should involve limited aspects of the query rather than directly asks the query again.
+4. Make sure that your inquiry should only involve some sub-aspects of the original query and it should be concise and shorter than the original query.
+5. Your inquiry would be directly sent to the retrieval system or the user for further clarification, so organize your inquiry.
+6. The retrieval system and the user do not know the document sent to you, so organize your inquiry well.
+
+Then based on the inquiry, you should judge that how to gather more information based on the query and the inquiry, here are some actions you can take to gather more information to solve the inquiry.
+
+A: Interact with the retrieval system to retrieve more document information
+B: Interact with the user to get further clarification about the original query
+
+If the answer to the inquiry is definite and objective, then you should interact with the retrieval system to get more document information to solve the inquiry.
+If the answer to the inquiry is not definite and it is some subjective choices of the user, you should interact with the user to clarify the original query.
+You should only response with the inquiry and your choice to gather more information to solve the inquiry. Please response with Dict{{"Inquiry": "Str(generated inquiry)","Choice" : "A/B"}}
+
+But if the inquiry simply rephrase the query or the answer of the inquiry is already indicated in the query or documents you should response with Dict{{"Inquiry": "Str(generated inquiry)","Choice" : "C"}}
+
+Now given the following Query and documents, Please generate your inquiry and choice.
+
+Query: {}
+Documents: {}
+
+Please generate your answer in json.
+

@@ -1,0 +1,29 @@
+Below is a question the corresponding gold documents to answer the question. We hide some key information to answer the question by obscuring the question or hiding some documents. Your task is to recognize those missing information and generate a corresponding inquiry to gather those information step by step.
+
+We would only provide the query information or the document information. When we provide query information, you should identify what information is missing in the actual query compared to the original query. When we provide document information, you should identify which document is missing in the actual documents.
+
+For example:
+"
+Original Query: In what 1997 American mystery crime film did Johnny Galecki start in?
+Gold Document: ""
+Actual Query: In which American film did Johnny Galecki star?
+Actual Document: ""
+Response: {{"missing information": "the year and genre of the film", "inquiry": "which year is the film and what is the genre of the film?"}}
+"
+
+"
+Original Query: ""
+Gold Document: A is a swimmer; B is a swimmer
+Actual Query: ""
+Actual Document: A is a swimmer; C is a swimmer
+Response: {{"missing information": "Is B a swimmer", "inquiry": "Provide more document information about is B a swimmer"}}
+"
+
+Now please generate the inquiry for the following query
+Original Query: {}
+Gold Document: {}
+Actual Query: {}
+Actual Document: {}
+
+Your output should be formatted as Dict{{"missing information": Str(missing information), "inquiry": Str(generated inquiry)}}. 
+Your should strictly format your response in this format, no extra tokens should be added.

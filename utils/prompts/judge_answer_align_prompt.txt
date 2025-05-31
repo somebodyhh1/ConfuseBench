@@ -1,0 +1,9 @@
+Given an inquiry and the answer from two different people, your task is to judge does the two answer align
+
+Query: {}
+Answer 1: {}
+Answer 2: {}
+
+If the two answers aligns, please response with <TRUE>, otherwise please response with <FALSE>, please answer with a single token <TRUE>/<FALSE>
+
+

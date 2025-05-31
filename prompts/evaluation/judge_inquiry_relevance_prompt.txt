@@ -1,0 +1,29 @@
+
+Given a question the corresponding gold documents to answer the question, we obscure the question or hide some key documents and generate an inquiry to gather those missing information. Your task is to evaluate the quality of the inquiry.
+Evaluation Criteria:
+
+Accurate: Does the inquiry directly indicate the missing information?
+Helpful: Does the answer to the inquiry help to better understand the original query
+Concise: Is the inquiry concise and containing only the essential missing information
+
+Scoring: Rate outputs on a scale of 1 to 5:
+1. Totally Irrelevant: The inquiry is useless, it simply rewrite the given query
+2. Somewhat Relevant: The inquiry is somewhat relevant to the missing information, but the inquiry can hardly gather useful information
+3. Basically Relevant: The inquiry asks something relevant to the missing information, there is a certain possibility of obtaining relevant information by the inquiry.
+4. Good: The inquiry directly asks the missing information, but not concise enough, there is great possibility that some useful information would be gathered.
+5. Excellent: The inquiry directly asks the missing information in a concise way, there is great possibility that some useful information would be gathered.
+
+Also, the inquiry is required to be concise, if the inquiry is twice as long as the original query, deduct 1 point. The minimum score is 1 point.
+
+Original Query: <{}>
+Gold Document: <{}>
+Actual Query: <{}>
+Actual Document: <{}>
+Missing Detail and Gold Inquiry: <{}>
+Problematic Inquiry: <{}>
+
+Remember that you should give a score to measure the quality of the problematic inquiry instead of the gold inquiry.
+
+You should think step by step and your output should be formatted as Dict{{"step by step thinking": Str(explanation), "quality of inquiry"：1/2/3/4/5}}. You should strictly format your response in this format, no extra tokens should be added.
+
+

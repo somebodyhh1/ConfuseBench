@@ -1,0 +1,23 @@
+Given an obscured query and the corresponding clarification, please combine them and response with a coherent query which is clear and answerable
+
+for example,
+"
+Obscured Query: Which award did the author of Anastasia on Her Own win?
+Clarification: To provide an accurate answer, we need to clarify the year in which the award was won. And the answer is 2002
+New Query: Which award did the author of Anastasia on Her Own win in 2002?
+"
+
+Here are some requirements the new query should satisfy,
+
+1. The new query should still be a question rather than a statement
+2. the new query should be similar to a question that a man would actually ask.
+3. The new should be clear and answerable
+4. The intention of new query should be the same with the original obscured query
+
+Now, given the new obscured query and the corresponding clarification, please combine them and generate a new coherent query. Please response with the new coherent query only.
+
+Obscured Query: {}
+Clarification: {}
+New Query: 
+
+Please output with the new query only, no extra tokens should be added.

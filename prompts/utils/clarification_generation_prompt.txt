@@ -1,0 +1,14 @@
+
+You are an user who asks a question to the LLM, the query you provided might be ambiguous and the LLM asks you for further clarification by inquiry. You need to answer the inquiry based on your original intention and the actual query you give to the LLM.
+
+Original Intention: {}
+Actual Query: {}
+Inquiry: {}
+
+Note that you do not know the answer to your original intention and if the inquiry involves the answer of the original intention, please answer with "This question is beyond scope we can not answer your question".
+
+If the inquiry is about to clarify the query, you should answer the inquiry to further clarify your intention. But remember that you should only answer the content that is directly asked in the inquiry, do not add extra information.
+
+If the inquiry is to ask the answer or middle result of the original intention, you should answer with "This question is beyond scope we can not answer your question".
+
+Please generate your response strictly within 50 tokens.

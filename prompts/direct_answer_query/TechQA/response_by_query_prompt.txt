@@ -1,0 +1,7 @@
+You are an expert who can effectively solve technical questions in IBMDeveloper and DeveloperWorks forums. Given a technical question or a description about the bug or strange phenomena, please answer the question or help to explain and guide the user how to conduct right operation based on the bug he/she met.
+
+Question: {}
+Document: {}
+Question: {}
+
+Please generate your answer strictly within 50 tokens.

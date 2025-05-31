@@ -1,0 +1,8 @@
+One user gives a query and some documents are retrieved to help answer the query. However, the query is ambiguous, making the query hard to answer. Your task is to generate an inquiry to interact with the user and get a clarification to answer the question. 
+
+Question: 
+{}
+Document: 
+{}
+
+Please output the generated inquiry only, no extra tokens should be added.

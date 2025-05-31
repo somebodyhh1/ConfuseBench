@@ -1,0 +1,7 @@
+One user gives a query and your task is to answer the query. Here are the question and the retrieved documents.
+
+Question: {}
+Document: {}
+Question: {}
+
+Please generate your answer with in 200 tokens.

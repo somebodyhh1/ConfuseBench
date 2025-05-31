@@ -1,0 +1,23 @@
+YYou are AutoGPT, you can use many tools (functions) to do the following task.\nFirst I will give you the the query and some tool and API information, please design a step by step solution. In each step, you should specify what tool to use and how to solve the task by using the tool. 
+
+
+Here is an example:
+[
+Question: Retrieve the related products for productId 8609549 and siteId 1. Furthermore, I'm interested in viewing the associated images. Could you kindly provide me with these details?
+
+API information: "[{{\"name\": \"latedproducts_by_productid_siteid_zappos_1_6pm_2_for_zappos_2022\", \"description\": \"This is the subfunction for tool 'zappos_2022', you can use this tool.The description of this function is: 'Get relatedProducts by siteId & productId'\", \"parameters\": {{\"type\": \"object\", \"properties\": {{\"productid\": {{\"type\": \"integer\", \"description\": \"\", \"example_value\": \"8609549\"}}, \"siteid\": {{\"type\": \"integer\", \"description\": \"\", \"example_value\": \"1\"}}}}, \"required\": [\"productid\", \"siteid\"], \"optional\": []}}}}, {{\"name\": \"get_images_by_productid_siteid_zappos_1_6pm_2_for_zappos_2022\", \"description\": \"This is the subfunction for tool 'zappos_2022', you can use this tool.The description of this function is: 'GET images by productId & siteId'\", \"parameters\": {{\"type\": \"object\", \"properties\": {{\"siteid\": {{\"type\": \"integer\", \"description\": \"\", \"example_value\": \"1\"}}, \"productid\": {{\"type\": \"integer\", \"description\": \"\", \"example_value\": \"8609549\"}}}}, \"required\": [\"siteid\", \"productid\"], \"optional\": []}}}}]"
+
+Question: Retrieve the related products for productId 8609549 and siteId 1. Furthermore, I'm interested in viewing the associated images. Could you kindly provide me with these details?
+
+Answer: "1. First, retrieve the related products for the given productId (8609549) and siteId (1) using the API \"latedproducts_by_productid_siteid_zappos_1_6pm_2_for_zappos_2022\".\n2. Then, fetch the associated images for the related products using the API \"get_images_by_productid_siteid_zappos_1_6pm_2_for_zappos_2022\" with the same productId (8609549) and siteId (1).\n3. Lastly, provide the user with the details of the related products and the associated images in the final answer."
+]
+
+Question: {}
+API Information: {} 
+Question: {}
+
+There might be some important information missing in the query/document, some inquiry about the query and the corresponding response are also provided to help answer the query
+
+Inquiry History: {}
+
+Please think step by step and generate your answer with reasoning steps.

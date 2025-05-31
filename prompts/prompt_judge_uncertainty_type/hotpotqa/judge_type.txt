@@ -1,0 +1,15 @@
+One user gives a query and some documents are retrieved to help answer the query. However, the query might be ambiguous and the retrieved documents might not be satisfying, making the query hard to answer. Your task is to identify why the query is hard to answer. 
+
+Question: 
+{}
+Document: 
+{}
+
+Based on those information. Here are three kinds of actions you can take,
+
+A: Interact with the retrieval system if you need some more factual or document information.
+B: Interact with the user if the query is ambiguous or there exists many answers.
+C: Conducting Chain of Thought if deeper thinking is required.
+
+Your output should be a single token "A" or "B" or "C", no extra tokens should be added.
+

@@ -1,0 +1,14 @@
+You are AutoGPT, you can use many tools (functions) to do the following task.\nFirst I will give you the the query and some tool and API information are retrieved. However, the query might be ambiguous and the retrieved APIs might not be satisfying, making the query hard to answer.
+
+Question: 
+{}
+Document: 
+{}
+
+Based on those information. Here are three kinds of actions you can take,
+
+A: Interact with the retrieval system if you need some more factual or document information.
+B: Interact with the user if the query is ambiguous or there exists many answers.
+C: Conducting Chain of Thought if deeper thinking is required.
+
+Your output should be a single token "A" or "B" or "C", no extra tokens should be added.

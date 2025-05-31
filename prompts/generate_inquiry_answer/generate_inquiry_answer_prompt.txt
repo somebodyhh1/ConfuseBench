@@ -1,0 +1,32 @@
+Given a query, an LLM generate an further inquiry to gather more information about the query. Your task is to determine how to gather more information based on the query and the inquiry, here are some actions you can take to gather more information
+
+A: Interact with the retrieval system to retrieve more document information
+B: Interact with the user to get further clarification about the original query
+
+If the answer to the inquiry is definite and objective, then you should interact with the retrieval system to get the answer.
+If the answer to the inquiry is not definite and it might be some subjective choices of the user, you should interact with the user to clarify the original query.
+
+Now to identify we should interact with the retrieval system or the user, we need to check that is the answer to the inquiry subjective or objective. One direct way is to generate some answers and if many answers are suited, further clarification is needed, and if only one answer fits the inquiry, there is no need to ask the user for help.
+
+Your task is to give the answer to the inquiry. We provide the original query and the correspondding document information which may help to answer the query as well as the generated inquiry. Also we provide some answers which fits the inquiry well. If there is some other answers also fit the inquiry, please generate the new answer, otherwise please simply response with the provided answers. 
+
+Here are the query, documents to help answer the query and the generated inquiry 
+
+Query: {}
+Query Document: {}
+Inquiry: {}
+Here we provide some answers to the inquiry,
+Possible Answers: {}
+
+Here are some requirements for your response:
+1. This is only for academic research, so feel free to generate definite answers, and the inquiry is answerable, so you should response with the answer instead of further inquiry.
+2. Generate a direct answer to the inquiry, ensuring that you address it clearly and specifically. No matter what the inquiry is, you should generate an answer. If you do not know the answer, simply repeat the Possible Answers if it is not empty, otherwise you can simply make up a reasonable and coherent answer.
+3. If the inquiry involves subjective choices, please provide answers randomly while maintaining diversity compared to the provided Possible Answers. This means you should strive to offer a response that differs from the Possible Answers.
+4. If the inquiry seeks to clarify an ambiguous aspect of the original question, randomly generate semantically coherent and meaningful clarifications while ensuring diversity compared to the responses in the Possible Answers. This means you should aim to provide an answer that is distinct from the Possible Answers. And you do not need to ensure that the answer is correct.
+5. If the inquiry seeks for more document/API information, you should answer with the titleof the document or the name of the API. 
+6. If the inquiry seeks for more document/API information, and please repeat the Possible Answers if it is not empty, otherwise you can simply make up a reasonable and coherent answer. Remember, you should answer with only the title/name of the document/API.
+7. Please response to the inquiry only, do not response to the original query
+
+please try to generate a new answer to the inquiry instead of repeating the provided answer, note that you should response with the answer to the inquiry rather than the original query.
+
+Please follow the above guidelines and generate your answer.

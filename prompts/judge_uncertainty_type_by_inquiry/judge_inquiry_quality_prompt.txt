@@ -1,0 +1,8 @@
+Given a query the corresponding documents to answer the query, one LLM propose an inquiry to gather more information to answer the query. Your task is to evaluate the quality of the inquiry.
+
+If the inquiry simply rephrase the query, you should response with "Useless", otherwise you should response with "Useful".
+
+Query: {} 
+Inquiry: {}
+
+Please generate your response in a single token "Useful" or "Useless".

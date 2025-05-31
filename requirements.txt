@@ -1,0 +1,14 @@
+elasticsearch==7.10.0
+faiss_gpu==1.7.2
+fastapi==0.115.12
+numpy==1.24.1
+numpy==1.24.4
+pandas==2.0.3
+peft==0.13.2
+pydantic==2.11.5
+PyYAML==6.0.2
+PyYAML==6.0.2
+Requests==2.32.3
+sentence_transformers==3.2.1
+torch==2.4.0
+uvicorn==0.34.2
